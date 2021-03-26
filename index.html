@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard-left">
+                <div class="bar-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="song-img">
+                    <img src="./img/4eca4670-045b-45df-991d-a086c78a8fed_1024.jpg" alt="">
+                </div>
+                <div class="song-des">
+                    <h3 class="song-name">My heart will go on</h3>
+                    <h4 class="author">Celine Dion</h4>
+                </div>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                <div class="control">
+                    <div class="icon-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="icon-pre">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="icon-playing">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="icon-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="icon-mix">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="dashboard-right">
+                <div class="playlist">
+                    <div class="playlist-name">
+                        <h3>
+                            My playlist
+                        </h3>
+                        <p>31/12/2010</p>
+                    </div>
+                    <div class="playlist-songs">
+                        <div class="song">
+                            <img src="./img/4eca4670-045b-45df-991d-a086c78a8fed_1024.jpg" alt="">
+                            <div class="song-des-r">
+                                <h4 class="song-name-r">My heart will go on</h4>
+                                <p class="singer">TriMen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
